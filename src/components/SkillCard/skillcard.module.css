@@ -1,0 +1,11 @@
+.skillCard {
+    width: fit-content;
+}
+.contentWrapper {
+    box-shadow: var(--protruding-effect);
+    display: flex;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 10px;
+    width: fit-content;
+}

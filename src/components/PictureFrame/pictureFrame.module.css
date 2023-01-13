@@ -1,0 +1,28 @@
+.outer{
+  position: relative;
+  border-radius: 50%;
+  box-shadow: var(--protruding-effect);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1/1;
+}
+
+.inner{
+  box-sizing: border-box;
+  height: calc(100% - 20px);
+  width: calc(100% - 20px);
+  border-radius: 50%;
+  box-shadow: var(--sunken-effect);
+  z-index: 15;
+}
+
+.outer img {
+  position: absolute;
+  height: calc(100% - 20px);
+  width: calc(100% - 20px);
+  border-radius: 50%;
+  z-index: 10;
+}

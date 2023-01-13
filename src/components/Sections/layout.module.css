@@ -1,0 +1,18 @@
+.Navbar {
+    display: none;
+    width: 20%;
+    margin: 15px;
+    box-shadow: var(--protruding-effect-lime100);
+}
+.DisplayBoard {
+    width: 80%;
+    margin: 15px;
+    box-shadow: var(--protruding-effect-lime100);
+    position: relative;
+}
+.SectionBadge {
+    position: absolute;
+}
+@media screen {
+    
+}

@@ -1,0 +1,18 @@
+.container {
+  padding: 0 1rem;
+  background-color: var(--background-lightblue);
+}
+.main {
+  height: 100vh;
+  padding: 1rem 0;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+}
+@media (min-width: 768px) {
+  .main {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+  }
+}
