@@ -22,31 +22,19 @@ export default function Button({
           return (
           <NextLink href={path}>
             <div className="w-full h-full m-2">
-               <svg className="hidden">
-                 <filter id="filter0_i_190_4" x="0" y="0" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                 <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-                 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                 <feOffset/>
-                 <feGaussianBlur stdDeviation="2.5"/>
-                 <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
-                 <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.43 0"/>
-                 <feBlend mode="normal" in2="shape" result="effect1_innerShadow_190_4"/>
-                 </filter>
-               </svg>
                <button
                       className={ClassNames("relative flex justify-center items-center shadow-protruding rounded-lg bg-convex hover:bg-concave w-full h-full", shape === "circle" ? "aspect-square rounded-[50%]" : "")}
                       disabled={disabled}>
-                   <span className={ClassNames("flex justify-center items-center box-border w-sub13px h-sub13px py-2 shadow-smooth-corner rounded-lg subpixel-antialiased innerbutton font-medium text-gray-500 ", shape === "circle" ? "rounded-[50%]" : "")}>{props.children}
+                   <span className={ClassNames("flex justify-center items-center box-border w-sub13px h-sub13px py-2 shadow-smooth-corner rounded-lg subpixel-antialiased font-medium text-gray-500 ", shape === "circle" ? "rounded-[50%]" : "")}>{props.children}
                     </span>
                </button>
                </div>
           </NextLink>
           );
-     case "linkStylized":
+     case "linkStyled":
           return (
                <NextLink href={path}>
-                    <div className="w-full sm:w-24 lg:w-full h-full sm:h-24 lg:h-full m-2 p-2">
+                    <div className="w-full sm:w-24 lg:w-full h-full sm:h-24 lg:h-full">
                <svg className="hidden">
                  <filter id="filter0_i_190_4" x="0" y="0" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
                  <feFlood flood-opacity="0" result="BackgroundImageFix"/>
@@ -62,7 +50,7 @@ export default function Button({
                <button
                       className={ClassNames("flex justify-center items-center shadow-protruding rounded-lg bg-convex hover:bg-concave w-full h-auto", shape === "circle" ? "aspect-square rounded-[50%]" : "")}
                       disabled={disabled}>
-                   <span className={ClassNames("flex justify-center items-center w-full h-full py-3 shadow-sunken-dark bg-concave-dark rounded-lg subpixel-antialiased innerbutton font-medium text-gray-500 ", shape === "circle" ? "rounded-[50%]" : "")}>{props.children}
+                   <span className={ClassNames("flex justify-center items-center w-full h-full py-3 shadow-sunken-dark bg-concave-dark rounded-lg p-2 subpixel-antialiased innerbutton font-medium text-gray-500 ", shape === "circle" ? "rounded-[50%]" : "")}>{props.children}
                     </span>
                </button>
                </div>
@@ -71,30 +59,18 @@ export default function Button({
      case "button":
           return (
                <div className="w-full h-full m-2">
-               <svg className="hidden">
-                 <filter id="filter0_i_190_4" x="0" y="0" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                 <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-                 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                 <feOffset/>
-                 <feGaussianBlur stdDeviation="2.5"/>
-                 <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
-                 <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.43 0"/>
-                 <feBlend mode="normal" in2="shape" result="effect1_innerShadow_190_4"/>
-                 </filter>
-               </svg>
                <button
                       onClick={(e) => {
                         onClick(e);
                       }}
                       className={ClassNames("relative flex justify-center items-center shadow-protruding rounded-lg bg-convex hover:bg-concave w-full h-full", shape === "circle" ? "aspect-square rounded-[50%]" : "")}
                       disabled={disabled}>
-                   <span className={ClassNames("flex justify-center items-center box-border w-sub13px h-sub13px py-2 shadow-smooth-corner rounded-lg subpixel-antialiased innerbutton font-medium text-gray-500 ", shape === "circle" ? "rounded-[50%]" : "")}>{props.children}
+                   <span className={ClassNames("flex justify-center items-center box-border w-sub13px h-sub13px py-2 shadow-smooth-corner rounded-lg subpixel-antialiased font-medium text-gray-500 ", shape === "circle" ? "rounded-[50%]" : "")}>{props.children}
                     </span>
                </button>
                </div>
           )
-     case "buttonStylized":
+     case "buttonStyled":
           return (
                <div className="w-full sm:w-24 lg:w-full h-full sm:h-24 lg:h-full m-2 p-2">
                <svg className="hidden">

@@ -17,8 +17,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={Classes.main}>
-        <div className="h-full gap-4 flex md:hidden flex-col justify-between items-center py-2">
-          <div id='dp' className='w-4/5 flex justify-center'>
+        <div className="h-full w-full gap-4 flex md:hidden flex-col justify-between items-center py-2">
+          <div id='dp' className='w-full h-full px-2'>
             <PictureFrame ImageSrc={MyGif.src}/>
           </div>
           <div id='text' className='text-center'>
@@ -46,7 +46,7 @@ export default function Home() {
             <NavBar page="homePage"/>
           </div>
         </div>
-        <div className='hidden md:flex justify-center items-center h-full w-full py-24'>
+        <div className='hidden md:flex justify-center items-center h-full w-full pb-24 pt-32'>
           <NavBar page="homePage"/>
           <div className='w-2/4 p-6'>
             <div className='w-4/5 m-auto'>
@@ -65,8 +65,8 @@ export default function Home() {
                 </a>
             </div>
           </div>
-          <div className='w-2/4 p-6 flex flex-col'>
-             <div className='flex flex-grow'>
+          <div className='w-2/4 h-full p-6 flex flex-col'>
+             <div className='flex flex-grow justify-center'>
                <PictureFrame ImageSrc={MyGif.src} shape="square"/>
              </div>
              <div className=''>

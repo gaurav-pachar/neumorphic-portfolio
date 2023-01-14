@@ -3,6 +3,7 @@
 }
 .desktopMenu {
     display: none;
+    padding: 0.5rem;
 }
 .gridWrapper {
     width: 100%;
@@ -84,8 +85,7 @@
    }
    .desktopMenu {
     width: 24rem;
-    height: 50px;
-    border-radius: 20px;
+    border-radius: 9999px;
     padding-left: 20px; 
     padding-right: 20px;
     box-shadow: var(--protruding-effect);
