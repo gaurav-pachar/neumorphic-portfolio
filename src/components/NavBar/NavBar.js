@@ -15,21 +15,21 @@ export default function NavBar ({page, ...props}){
             <div className='grid grid-cols-4 grid-rows-2 gap-4 w-full h-[20vh] px-6 md:hidden'>
                <div className='col-span-4 flex justify-center items-center'>
                   <div className="w-1/5">
-                     <Button ButtonType="protruding" type="linkStyled" path="/" borderRadius="10px" width='100%' height='100%' shape="circle">
+                     <Button ButtonType="protruding" styling="linkStyled" path="/" borderRadius="10px" width='100%' height='100%' shape="circle">
                         <FaHome className='mx-auto w-9 h-9 z-10 text-gray-400'/> 
                      </Button>
                   </div>
                </div>
                <div className='col-span-2 flex justify-start items-center'>
                   <div className="w-2/5">
-                     <Button ButtonType="protruding" type="linkStyled" path="/resume" borderRadius="10px" width='100%' height='100%' shape="circle">
+                     <Button ButtonType="protruding" styling="linkStyled" path="/resume" borderRadius="10px" width='100%' height='100%' shape="circle">
                         <IoDocumentText className='mx-auto w-9 h-9 z-10 text-gray-400'/>
                      </Button>
                   </div>
                </div>
                <div className='col-span-2 flex justify-end items-center'>
                   <div className="w-2/5">
-                     <Button ButtonType="protruding" type="linkStyled" path="/contact" borderRadius="10px" width='100%' height='100%' shape="circle">
+                     <Button ButtonType="protruding" styling="linkStyled" path="/contact" borderRadius="10px" width='100%' height='100%' shape="circle">
                         <IoMail className='mx-auto w-9 h-9 z-10 text-gray-400'/> 
                      </Button>
                   </div>
@@ -38,17 +38,17 @@ export default function NavBar ({page, ...props}){
    
             <div className={Classes.desktopMenu}>
                <div className="w-18 h-18">
-                  <Button ButtonType="protruding" type="linkStyled" path="/" borderRadius="10px" shape="circle">
+                  <Button ButtonType="protruding" styling="linkStyled" path="/" borderRadius="10px" shape="circle">
                      <FaHome className='mx-auto w-7 h-7 z-10 text-gray-400'/> 
                   </Button>
                </div>
                <div className="w-18 h-18">
-                  <Button ButtonType="protruding" type="linkStyled" path="/resume" borderRadius="10px" width='100%' height='100%' shape="circle">
+                  <Button ButtonType="protruding" styling="linkStyled" path="/resume" borderRadius="10px" width='100%' height='100%' shape="circle">
                      <IoDocumentText className='mx-auto w-7 h-7 z-10 text-gray-400'/>
                   </Button>
                </div>
                <div className="w-18 h-18">
-                  <Button ButtonType="protruding" type="linkStyled" path="/contact" borderRadius="10px" width='100%' height='100%' shape="circle">
+                  <Button ButtonType="protruding" styling="linkStyled" path="/contact" borderRadius="10px" width='100%' height='100%' shape="circle">
                      <IoMail className='mx-auto w-7 h-7 z-10 text-gray-400'/> 
                   </Button>
                </div>
