@@ -22,9 +22,13 @@
   background: #555;
 }
 
-.innerbutton svg {
+.iconInnerShadow svg {
   filter: url('#filter0_i_190_4');
   fill: white;
+}
+.iconInnerDarkShadow svg {
+  filter: url('#filter0_i_399_42');
+  fill: gray;
 }
 
 @layer base {

@@ -14,10 +14,11 @@ export default function Button({
      width,
      height,
      shape,
+     styling,
      ...props
 }){
      
-    switch (type) {
+    switch (styling) {
      case "link":
           return (
           <NextLink href={path}>
@@ -50,7 +51,7 @@ export default function Button({
                <button
                       className={ClassNames("flex justify-center items-center shadow-protruding rounded-lg bg-convex hover:bg-concave w-full h-auto", shape === "circle" ? "aspect-square rounded-[50%]" : "")}
                       disabled={disabled}>
-                   <span className={ClassNames("flex justify-center items-center w-full h-full py-3 shadow-sunken-dark bg-concave-dark rounded-lg p-2 subpixel-antialiased innerbutton font-medium text-gray-500 ", shape === "circle" ? "rounded-[50%]" : "")}>{props.children}
+                   <span className={ClassNames("flex justify-center items-center w-full h-full py-3 shadow-sunken-dark bg-concave-dark rounded-lg p-2 subpixel-antialiased iconInnerShadow font-medium text-gray-500 ", shape === "circle" ? "rounded-[50%]" : "")}>{props.children}
                     </span>
                </button>
                </div>
@@ -89,9 +90,9 @@ export default function Button({
                       onClick={(e) => {
                         onClick(e);
                       }}
-                      className={ClassNames("flex justify-center items-center shadow-protruding rounded-lg bg-convex hover:bg-concave w-full h-auto", shape === "circle" ? "aspect-square rounded-[50%]" : "")}
+                      className={ClassNames("flex justify-center items-center shadow-protruding rounded-lg w-full h-auto transition-all ease-in-out duration-700 hover:scale-125 hover:drop-shadow-lg", shape === "circle" ? "aspect-square rounded-[50%]" : "")}
                       disabled={disabled}>
-                   <span className={ClassNames("flex justify-center items-center w-full h-full py-3 shadow-sunken-dark bg-concave-dark rounded-lg subpixel-antialiased innerbutton font-medium text-gray-500 ", shape === "circle" ? "rounded-[50%]" : "")}>{props.children}
+                   <span className={ClassNames("flex justify-center items-center w-full h-full py-3 shadow-sunken-dark bg-concave-dark rounded-lg subpixel-antialiased iconInnerShadow font-medium text-gray-500 ", shape === "circle" ? "rounded-[50%]" : "")}>{props.children}
                     </span>
                </button>
                </div>
