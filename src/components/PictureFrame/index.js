@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function PictureFrame({shape, ...props}) {
    return (
       
-      <div className={ClassNames("relative shadow-protruding flex justify-center items-center w-auto h-auto aspect-square", shape === "square" ? "rounded-3xl" : "rounded-full")}>
+      <div className={ClassNames("relative shadow-protruding flex justify-center items-center w-full h-auto aspect-square bg-primary", shape === "square" ? "rounded-3xl" : "rounded-full")}>
 
        <div className={ClassNames("absolute w-sub20px h-sub20px z-10", shape === "square" ? "rounded-3xl" : "rounded-full")}>
          <Image 

@@ -21,8 +21,15 @@ export default function Resume (props) {
       </Head>
       <main className={Classes.main}>
         <div className="flex sm:flex-col lg:flex-row box-border sm:p-4 h-full">
+        <Tab.Group>
           <NavBar page="resumePage" showMenu={showMenu}/>
-          <WorkEx/>
+          <Tab.Panels>
+            <Tab.Panel><SkillsSection/></Tab.Panel>
+            <Tab.Panel><WorkEx/></Tab.Panel>
+            <Tab.Panel><WorkEx/></Tab.Panel>
+            <Tab.Panel><WorkEx/></Tab.Panel>
+          </Tab.Panels>
+        </Tab.Group>
         </div>
         <div className="absolute bottom-0 w-[100vw] flex sm:hidden justify-end items-center">
         <button 

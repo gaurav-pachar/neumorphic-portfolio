@@ -1,5 +1,6 @@
 //import Button from "elements/Button";
 import axios from "axios";
+import NavBar from "components/NavBar/NavBar";
 import Head from 'next/head'
 import React from "react";
 import { FaHome, FaFileAlt, FaPhoneAlt, FaLinkedin, FaGithub, FaTwitter, FaCircleNotch, FaLeaf } from "react-icons/fa";
@@ -66,8 +67,9 @@ export default function Contact({props}) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="bg-primary h-screen flex items-center">
+        <NavBar page="contactPage"/>
         <div className="m-auto py-4 px-4 sm:py-24 sm:px-6 lg:px-8 w-full">
-          <div className="relative bg-primary shadow-protruding rounded-xl">
+          <div className="relative bg-primary shadow-protruding rounded-xl mt-32 lg:mt-0">
             <h2 className="sr-only">Contact us</h2>
             <div className="grid grid-cols-1 lg:grid-cols-3">
             {/* Contact information */}

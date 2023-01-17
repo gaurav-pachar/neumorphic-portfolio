@@ -61,9 +61,6 @@ export default function Button({
           return (
                <div className="w-full h-full m-2">
                <button
-                      onClick={(e) => {
-                        onClick(e);
-                      }}
                       className={ClassNames("relative flex justify-center items-center shadow-protruding rounded-lg bg-convex hover:bg-concave w-full h-full", shape === "circle" ? "aspect-square rounded-[50%]" : "")}
                       disabled={disabled}>
                    <span className={ClassNames("flex justify-center items-center box-border w-sub13px h-sub13px py-2 shadow-smooth-corner rounded-lg subpixel-antialiased font-medium text-gray-500 ", shape === "circle" ? "rounded-[50%]" : "")}>{props.children}
