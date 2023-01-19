@@ -6,11 +6,11 @@ export default function WorkEx ({props}) {
     return (
     <div className={Classes.SectionWrapper}>
         <div className={Classes.sectionBadge}>
-            <h1 className="m-auto font-bold text-3xl text-gray-500">Experience</h1> 
+            <h1 className="m-auto font-bold text-3xl text-gray-500 tracking-wider antialiased">Experience</h1> 
         </div>
         <div className="flex mt-6 p-4">
             <div className="flex flex-1 justify-end sm:justify-center items-center">
-                  <h2 className="font-bold text-3xl text-gray-500">
+                  <h2 className="font-bold text-3xl text-gray-500 tracking-wider antialiased">
                   {WorkEx.Name}
                   </h2>
             </div> 
@@ -19,13 +19,13 @@ export default function WorkEx ({props}) {
             {WorkEx.list.map((item, index) => {
                 return (
                     <div key={index}>
-                        <h2 className="text-2xl font-medium text-gray-600 subpixel-antialiased">
+                        <h2 className="text-2xl font-medium text-gray-600 tracking-wider antialiased">
                             {item.organisation}
                         </h2>
-                        <h3 className="text-xl font-normal text-gray-600 subpixel-antialiased">
+                        <h3 className="text-xl font-normal text-gray-600 tracking-wider antialiased">
                             {item.timePeriod}
                         </h3>
-                        <ol className="p-2 text-lg subpixel-antialiased text-gray-500">
+                        <ol className="p-2 text-lg antialiased text-gray-500">
                             {item.projectDetails.map((item, index) => {
                                 return (
                                     <li key={index}>
@@ -40,7 +40,7 @@ export default function WorkEx ({props}) {
         </div>
         <div className="flex mt-6 p-4">
             <div className="flex flex-1 justify-end sm:justify-center items-center">
-                  <h2 className="font-bold text-3xl text-gray-500">
+                  <h2 className="font-bold text-3xl text-gray-500 tracking-wider antialiased">
                   {OpenSource.Name}
                   </h2>
             </div> 
@@ -49,13 +49,13 @@ export default function WorkEx ({props}) {
             {OpenSource.list.map((item, index) => {
                 return (
                     <div className="" key={index}>
-                        <h2 className="text-2xl font-medium text-gray-600 subpixel-antialiased">
+                        <h2 className="text-2xl font-medium text-gray-600 tracking-wider antialiased">
                             {item.name}
                         </h2>
-                        <p className="p-2 text-lg subpixel-antialiased text-gray-500">
+                        <p className="p-2 text-lg tracking-wider antialiased text-gray-500">
                             {item.details}
                         </p>
-                        <a className="" href="https://github.com/gaurav-pachar">
+                        <a className="tracking-wider antialiased" href={item.projectUrl} target="_blank" rel="noreferrer">
                             GitHub Link
                         </a>
                     </div>

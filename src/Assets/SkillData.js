@@ -12,7 +12,7 @@ const SkillData = {
             name: "HTML",
             details: "HTML5, UI & UX Design",
             icon: "html",
-            score: 7
+            score: 6
         },
         {
             name: "CSS",
@@ -35,7 +35,7 @@ const SkillData = {
             name: "Redux",
             details: "Redux Toolkit , State Manangment",
             icon: "redux",
-            score: 7
+            score: 6
         },
         {
             name: "NextJS",

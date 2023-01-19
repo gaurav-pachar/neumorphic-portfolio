@@ -11,11 +11,11 @@ export default function SkillsSection (props) {
     return (
     <div className={Classes.SectionWrapper}>
         <div className={Classes.sectionBadge}>
-            <h1 className="m-auto font-bold text-3xl">Skills</h1> 
+            <h1 className="m-auto font-bold text-3xl text-gray-500 tracking-wider antialiased">Skills</h1> 
         </div>
         <div className="flex mr-6 p-4">
             <div className="flex flex-1 justify-end sm:justify-center items-center">
-                  <h2 className="font-bold text-3xl text-gray-500">
+                  <h2 className="font-bold text-3xl text-gray-500 tracking-wider antialiased">
                       {Languages.id}
                   </h2>
             </div> 
@@ -32,7 +32,7 @@ export default function SkillsSection (props) {
         </div>
         <div className="flex mr-6 p-4">
             <div className="flex flex-1 justify-start sm:justify-center items-center">
-                  <h2 className="font-bold text-3xl text-gray-500">
+                  <h2 className="font-bold text-3xl text-gray-500 tracking-wider antialiased">
                       {FrameworksAndLibraries.id}
                   </h2>
             </div> 
@@ -49,7 +49,7 @@ export default function SkillsSection (props) {
         </div>
         <div className="flex mr-6 p-4">
             <div className="flex flex-1 justify-end sm:justify-center items-center">
-                  <h2 className="font-bold text-3xl text-gray-500">
+                  <h2 className="font-bold text-3xl text-gray-500 tracking-wider antialiased">
                       {DevOps.id}
                   </h2>
             </div> 
@@ -66,7 +66,7 @@ export default function SkillsSection (props) {
         </div>
         <div className="flex mr-6 p-4">
             <div className="flex flex-1 justify-start sm:justify-center items-center">
-                  <h2 className="font-bold text-3xl text-gray-500">
+                  <h2 className="font-bold text-3xl text-gray-500 tracking-wider antialiased">
                       {OtherTools.id}
                   </h2>
             </div> 
@@ -84,19 +84,3 @@ export default function SkillsSection (props) {
     </div> 
     )
 }
-const iconsWanted = [
-    "css3",
-  "exprejs",
-  "facebook",
-  "figma",
-  "git",
-  "github",
-  "gmail",
-  "html5",
-  "js",
-  "linkedin",
-  "mongodb",
-  "nodejs",
-  "reactjs",
-  "vscode"
-  ]

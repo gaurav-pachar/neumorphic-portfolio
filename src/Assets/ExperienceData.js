@@ -24,13 +24,13 @@ const ExperienceData = {
                 name: "Lead Management Application",
                 details: "A application which help user to manage lead in a business, this one is a example for House Plumbings and Electricals Contractor",
                 image: "url",
-                projectUrl: "url"
+                projectUrl: "https://github.com/gaurav-pachar/lead-management-application"
             },
             {
                 name: "Neumorphic Portfolio",
                 details: "Neumorphism Desgin Based Web Developer Portfolio",
                 image: "url",
-                projectUrl: "url"
+                projectUrl: "https://github.com/gaurav-pachar/neumorphic-portfolio"
             }
         ]
     }

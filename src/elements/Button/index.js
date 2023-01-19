@@ -15,6 +15,7 @@ export default function Button({
      height,
      shape,
      styling,
+     active,
      ...props
 }){
      
@@ -35,7 +36,7 @@ export default function Button({
      case "linkStyled":
           return (
                <NextLink href={path}>
-                    <div className="w-full sm:w-24 lg:w-full h-full sm:h-24 lg:h-full">
+                    <div className="w-full h-full">
                <svg className="hidden">
                  <filter id="filter0_i_190_4" x="0" y="0" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
                  <feFlood flood-opacity="0" result="BackgroundImageFix"/>
@@ -59,14 +60,20 @@ export default function Button({
           )
      case "button":
           return (
-               <div className="w-full h-full m-2">
                <button
-                      className={ClassNames("relative flex justify-center items-center shadow-protruding rounded-lg bg-convex hover:bg-concave w-full h-full", shape === "circle" ? "aspect-square rounded-[50%]" : "")}
+                      onClick={(e) => {
+                        onClick(e);
+                      }}
+                      className={ClassNames(
+                         "flex justify-center items-center",
+                         "shadow-protruding rounded-lg",
+                         "hover:bg-concave w-full h-auto p-[6px]", 
+                         active ? "bg-concave" : "bg-convex",
+                         shape === "circle" ? "aspect-square rounded-[50%]" : "")}
                       disabled={disabled}>
-                   <span className={ClassNames("flex justify-center items-center box-border w-sub13px h-sub13px py-2 shadow-smooth-corner rounded-lg subpixel-antialiased font-medium text-gray-500 ", shape === "circle" ? "rounded-[50%]" : "")}>{props.children}
+                   <span className={ClassNames("flex justify-center items-center w-full py-1.5 shadow-smooth-corner rounded-lg subpixel-antialiased font-medium text-gray-500 ", shape === "circle" ? "rounded-[50%]" : "")}>{props.children}
                     </span>
                </button>
-               </div>
           )
      case "buttonStyled":
           return (
