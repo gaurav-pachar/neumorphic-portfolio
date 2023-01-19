@@ -102,6 +102,7 @@ export default function Contact({props}) {
                   )
                 })} 
               </ul>
+              <a className="block text text-gray-500 mt-4 underline" href="https://drive.google.com/drive/folders/1aR1TJX8Hl9neEOsdcHBaDU8awWzGJEgV?usp=sharing" target="_blank" rel="noreferrer">Download Resume in PDF</a>
             </div>
 
             {/* Contact form */}
