@@ -84,7 +84,7 @@ export default function Contact({props}) {
                     </dt>
                     <dd className="flex text-base items-center text-gray-500">
                       {item.icon}
-                      <span className="ml-3 ">{item.value}</span>
+                      <span className="ml-3">{item.value}</span>
                     </dd>
                     </div>
                   )

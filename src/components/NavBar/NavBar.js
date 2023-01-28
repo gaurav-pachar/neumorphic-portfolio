@@ -66,7 +66,7 @@ export default function NavBar ({page, ...props}){
             <div className={ClassNames(
                "absolute md:relative top-0 left-0 bottom-0",
                "flex justify-center items-center",
-               "z-resumeNavbar m-4 md:mt-2 md:mx-0 w-fit md:w-full lg:w-fit",
+               "z-resumeNavbar m-4 md:mt-2 md:mx-0 w-fit md:w-full lg:w-1/3 lg:max-w-xs",
                "md:translate-x-0 transition-all md:transition-none duration-500 ease-in-out",
                (props.showMenu ? "translate-x-0" : "-translate-x-[500px]"))}> 
                
@@ -99,7 +99,7 @@ export default function NavBar ({page, ...props}){
                      "col-start-1 col-span-2 md:col-span-1 lg:col-span-2",
                      "row-start-2 md:row-start-1 lg:row-start-2 row-span-1 md:row-span-2 lg:row-span-1",
                      "py-3 md:p-4",
-                     "w-[200px] md:w-[250px] lg:w-[300px] h-[200px] sm:h-[250px] lg:h-[300px]")}>
+                     "w-[200px] md:w-[250px] lg:w-full h-[200px] sm:h-[250px] lg:h-full")}>
                      <PictureFrame ImageSrc={DP.src}/>
                   </div>
                   {/* Section Tabs */}
@@ -109,22 +109,22 @@ export default function NavBar ({page, ...props}){
                      "row-start-3 md:row-start-2 lg:row-start-3 row-span-1",
                      "w-full p-2")}>
                         <div className="row-span-1 flex justify-center items-center">
-                        <Button onClick={(e) => setActiveTab(DispatchActiveTab, 0)} ButtonType="protruding" styling="button" width='100%' height='100%'>
+                        <Button onClick={(e) => setActiveTab(DispatchActiveTab, 0)} ButtonType="protruding" styling="button">
                            Work Ex
                         </Button>
                         </div>
                         <div className="row-span-1 flex justify-center items-center">
-                        <Button onClick={(e) => setActiveTab(DispatchActiveTab, 1)} ButtonType="protruding" styling="button" width='100%' height='100%'>
+                        <Button onClick={(e) => setActiveTab(DispatchActiveTab, 1)} ButtonType="protruding" styling="button">
                            Skills
                         </Button>
                         </div>
                         <div className="row-span-1 flex justify-center items-center">
-                        <Button onClick={(e) => setActiveTab(DispatchActiveTab, 2)} ButtonType="protruding" styling="button" width='100%' height='100%'>
+                        <Button onClick={(e) => setActiveTab(DispatchActiveTab, 2)} ButtonType="protruding" styling="button">
                            About 
                         </Button>
                         </div>
                         <div className="row-span-1 flex justify-center items-center">
-                        <Button onClick={(e) => setActiveTab(DispatchActiveTab, 3)} ButtonType="protruding" styling="button" width='100%' height='100%'>
+                        <Button onClick={(e) => setActiveTab(DispatchActiveTab, 3)} ButtonType="protruding" styling="button">
                            Academics
                         </Button>
                         </div>

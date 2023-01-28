@@ -36,7 +36,7 @@ export default function Button({
      case "linkStyled":
           return (
                <NextLink href={path}>
-                    <div className="w-full h-full">
+               <div className="w-full h-full">
                <svg className="hidden">
                  <filter id="filter0_i_190_4" x="0" y="0" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
                  <feFlood flood-opacity="0" result="BackgroundImageFix"/>

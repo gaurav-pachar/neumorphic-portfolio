@@ -28,7 +28,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="relative">
-        <div className="flex md:hidden flex-col justify-between items-center py-2 h-screen">
+        <div className="flex md:hidden flex-col mx-auto justify-between items-center py-2 h-screen max-w-lg">
           <div id='dp' className='px-6 mt-4 w-9/12'>
             <PictureFrame ImageSrc={MyGif.src}/>
           </div>
@@ -36,9 +36,13 @@ export default function Home() {
             <h1 className='text-2xl font-bold tracking-wider text-gray-600 antialiased'>
               Hi I'm Gaurav
             </h1>
+          </div>
+          <div id='text' className='text-center'>
             <h3 className='font-bold text-gray-500 tracking-wider mb-4 antialiased'>
               (JavaScript Developer)
             </h3>
+          </div>
+          <div id='text' className='text-center'>
             <p className='text-center text-gray-400 font-semibold md:hidden antialiased px-2'>
               JavaScript | ReactJs | NextJs | Html | CSS | NodeJs | ExpressJs
             </p>
