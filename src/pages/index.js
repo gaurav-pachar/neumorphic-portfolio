@@ -2,7 +2,7 @@ import Head from 'next/head'
 import MyGif from "../../public/AREmoji_20221029_123415_9044 (1).gif";
 import DP from "../../public/20221115_212121(0).jpg"
 import NavBar from 'components/navBa/NavBar';
-import PictureFrame from "components/pictureFram/index";
+import PictureFrame from "components/pictureFram/pictureFrame";
 import SvgElements from "elements/SVG/SvgElements";
 const socialLinksData = [
   {

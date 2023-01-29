@@ -5,7 +5,7 @@ import Classes from "./navbar.module.css";
 import Button from "elements/Button";
 import MyGif from "../../../public/AREmoji_20221029_123415_9044 (1).gif";
 import DP from "../../../public/20221115_212121(0).jpg"
-import PictureFrame from 'components/pictureFram';
+import PictureFrame from 'components/pictureFram/pictureFrame';
 import {
    ResumePageTabsStateContext,
    ResumePageTabsDispatchContext,

@@ -3,9 +3,9 @@ import Head from 'next/head'
 import Classes from 'styles/Resume.module.css';
 import NavBar from 'components/navBa/NavBar';
 import { FaBars } from "react-icons/fa";
-import SkillsSection from "components/sections/skills/Skills";
-import WorkEx from "components/sections/workEx/WorkEx";
-import About from "components/sections/about/about";
+import SkillsSection from "components/section/skill/Skills";
+import WorkEx from "components/section/workE/WorkEx";
+import About from "components/section/abou/about";
 import {
   ResumePageTabsStateContext,
   ResumePageTabsDispatchContext,
