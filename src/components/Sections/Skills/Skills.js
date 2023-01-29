@@ -1,9 +1,9 @@
 import React from "react";
 import SvgComponents from 'elements/SVG/SvgElements';
-import SkillFrame from "components/SkillFrame";
+import SkillFrame from "components/SkillFram";
 import SvgElements from "elements/SVG/SvgElements";
 import Classes from "./skills.module.css"
-import SkillCard from "components/skillCard/SkillCard";
+import SkillCard from "components/skillCar/SkillCard";
 import SkillData from "Assets/SkillData";
 export default function SkillsSection (props) {
     const { Languages, FrameworksAndLibraries, DevOps, OtherTools} = SkillData

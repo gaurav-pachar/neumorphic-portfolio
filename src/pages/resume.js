@@ -1,7 +1,7 @@
 import React from "react";
 import Head from 'next/head'
 import Classes from 'styles/Resume.module.css';
-import NavBar from 'components/navBar/NavBar';
+import NavBar from 'components/navBa/NavBar';
 import { FaBars } from "react-icons/fa";
 import SkillsSection from "components/sections/skills/Skills";
 import WorkEx from "components/sections/workEx/WorkEx";

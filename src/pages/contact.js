@@ -1,6 +1,6 @@
 //import Button from "elements/Button";
 import axios from "axios";
-import NavBar from "components/navBar/NavBar";
+import NavBar from "components/navBa/NavBar";
 import Head from 'next/head'
 import React from "react";
 import { FaPhoneAlt, FaLinkedin, FaGithub, FaTwitter, FaCircleNotch } from "react-icons/fa";
