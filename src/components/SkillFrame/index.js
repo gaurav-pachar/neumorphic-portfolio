@@ -1,4 +1,4 @@
-import CircularProgressBar from "components/CircularBar/CircularProgressBar";
+import CircularProgressBar from "components/circularBar/CircularProgressBar";
 import React from"react";
 import Classes from "./skillFrame.module.css";
 

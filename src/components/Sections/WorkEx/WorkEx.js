@@ -4,8 +4,8 @@ import ExperienceData from "Assets/ExperienceData";
 export default function WorkEx ({props}) {
     const { WorkEx, OpenSource } = ExperienceData
     return (
-    <div className={Classes.SectionWrapper}>
-        <div className={Classes.sectionBadge}>
+    <div className="flex flex-col w-full p-8">
+        <div className="fixed lg:hidden top-0 left-0 bg-primary shadow-shadow-only rounded-br-3xl w-fit p-2">
             <h1 className="m-auto font-bold text-3xl text-gray-500 tracking-wider antialiased">Experience</h1> 
         </div>
         <div className="flex mt-6 p-4">

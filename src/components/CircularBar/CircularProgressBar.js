@@ -6,8 +6,8 @@ import {
     VIEWBOX_HEIGHT_HALF,
     VIEWBOX_CENTER_X,
     VIEWBOX_CENTER_Y,
-  } from '../CircularBar/constants';
-import Path from '../CircularBar/path';
+  } from './constants';
+import Path from './path';
 
 export default function CircularProgressBar ({strokeWidth = 10, maxValue=100, minValue=0, ...props}) {
     function getBackgroundPadding() {

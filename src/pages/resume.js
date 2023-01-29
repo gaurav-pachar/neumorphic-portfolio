@@ -3,11 +3,12 @@ import Head from 'next/head'
 import Classes from 'styles/Resume.module.css';
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 import MyGif from "../../public/AREmoji_20221029_123415_9044 (1).gif";
-import NavBar from 'components/NavBar/NavBar';
+import NavBar from 'components/navBar/NavBar';
 import { FaHome, FaFileAlt, FaBars } from "react-icons/fa";
 import { IoDocumentText, IoMail } from "react-icons/io5";
-import SkillsSection from "components/Sections/Skills/Skills";
-import WorkEx from "components/Sections/WorkEx/WorkEx";
+import SkillsSection from "components/sections/Skills/Skills";
+import WorkEx from "components/sections/WorkEx/WorkEx";
+import About from "components/sections/about/about";
 import { Tab } from "@headlessui/react";
 import {
   ResumePageTabsStateContext,
@@ -23,7 +24,17 @@ export default function Resume (props) {
   const SkillSection = <SkillsSection/>;
   const AboutSection = <WorkEx/>;
   const AcademicsSection = <SkillsSection/>;
-  const Section = [WorkExSection, SkillSection, AboutSection, AcademicsSection]
+  const Section = [WorkExSection, SkillSection, AboutSection, AcademicsSection];
+  const Sections = (activeTab) => {
+     switch (activeTab) {
+      case 0:
+        return <WorkEx/>;
+      case 1:
+        return <SkillsSection/>;
+      case 2:
+        return <About/>
+     }
+  }
     return (
       <div className={Classes.container}>
       <Head>
@@ -34,10 +45,10 @@ export default function Resume (props) {
       <main className={Classes.main}>
         <div className="flex sm:flex-col lg:flex-row box-border sm:p-4 h-full">
           <NavBar page="resumePage" showMenu={showMenu}/>
-          <div className="block overflow-scroll">{Section[activeTab]}</div>
+          <div className="overflow-scroll">{Sections(activeTab)}</div>
           
         </div>
-        <div className="absolute bottom-0 w-[100vw] flex md:hidden justify-end items-center">
+        <div className="absolute bottom-0 w-[100vw] flex lg:hidden justify-end items-center">
         <button 
                className={"flex p-6 mx-6 my-4 shadow-shadow-only rounded-full z-menuButton " + (showMenu ? "bg-concave" : "bg-convex")}
                onClick={() => {

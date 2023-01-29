@@ -3,17 +3,17 @@ import SvgComponents from 'elements/SVG/SvgElements';
 import SkillFrame from "components/SkillFrame";
 import SvgElements from "elements/SVG/SvgElements";
 import Classes from "./skills.module.css"
-import SkillCard from "components/SkillCard/SkillCard";
+import SkillCard from "components/skillCard/SkillCard";
 import SkillData from "Assets/SkillData";
 export default function SkillsSection (props) {
     const { Languages, FrameworksAndLibraries, DevOps, OtherTools} = SkillData
     console.log(Languages);
     return (
-    <div className={Classes.SectionWrapper}>
-        <div className={Classes.sectionBadge}>
+    <div className="flex flex-col w-full p-8">
+        <div className="fixed lg:hidden top-0 left-0 bg-primary shadow-shadow-only rounded-br-3xl w-fit p-2">
             <h1 className="m-auto font-bold text-3xl text-gray-500 tracking-wider antialiased">Skills</h1> 
         </div>
-        <div className="flex mr-6 p-4">
+        <div className="flex mt-6 p-4">
             <div className="flex flex-1 justify-end sm:justify-center items-center">
                   <h2 className="font-bold text-3xl text-gray-500 tracking-wider antialiased">
                       {Languages.id}

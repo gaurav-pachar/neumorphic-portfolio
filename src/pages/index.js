@@ -6,8 +6,8 @@ import MyGif from "../../public/AREmoji_20221029_123415_9044 (1).gif";
 import { FaHome, FaFileAlt } from "react-icons/fa";
 import { IoDocumentText, IoMail } from "react-icons/io5";
 import DP from "../../public/20221115_212121(0).jpg"
-import NavBar from 'components/NavBar/NavBar';
-import PictureFrame from 'components/PictureFrame';
+import NavBar from 'components/navBar/NavBar';
+import PictureFrame from 'components/pictureFrame';
 import SvgElements from "elements/SVG/SvgElements";
 const socialLinksData = [
   {
