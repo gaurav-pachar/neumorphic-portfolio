@@ -3,8 +3,8 @@ import axios from "axios";
 import NavBar from "components/navBar/NavBar";
 import Head from 'next/head'
 import React from "react";
-import { FaHome, FaFileAlt, FaPhoneAlt, FaLinkedin, FaGithub, FaTwitter, FaCircleNotch, FaLeaf } from "react-icons/fa";
-import { IoDocumentText, IoMail, IoSend } from "react-icons/io5";
+import { FaPhoneAlt, FaLinkedin, FaGithub, FaTwitter, FaCircleNotch } from "react-icons/fa";
+import { IoMail, IoSend } from "react-icons/io5";
 import ClassNames from "Utils/ClassNames";
 const contactInfo = [
   {

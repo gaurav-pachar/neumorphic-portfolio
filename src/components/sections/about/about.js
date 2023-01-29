@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function about({props}) {
+export default function AboutSection ({props}) {
     return (
         <div className="p-4 h-full lg:flex lg:items-center">
            <div className="fixed lg:hidden top-0 left-0 bg-primary shadow-shadow-only rounded-br-3xl w-fit p-2">
@@ -18,4 +18,4 @@ export default function about({props}) {
            </div>
         </div>
     )
-} 
+}

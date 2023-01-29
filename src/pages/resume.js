@@ -1,15 +1,11 @@
-import React, { useContext } from "react";
+import React from "react";
 import Head from 'next/head'
 import Classes from 'styles/Resume.module.css';
-import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
-import MyGif from "../../public/AREmoji_20221029_123415_9044 (1).gif";
 import NavBar from 'components/navBar/NavBar';
-import { FaHome, FaFileAlt, FaBars } from "react-icons/fa";
-import { IoDocumentText, IoMail } from "react-icons/io5";
-import SkillsSection from "components/sections/Skills/Skills";
-import WorkEx from "components/sections/WorkEx/WorkEx";
+import { FaBars } from "react-icons/fa";
+import SkillsSection from "components/sections/skills/Skills";
+import WorkEx from "components/sections/workEx/WorkEx";
 import About from "components/sections/about/about";
-import { Tab } from "@headlessui/react";
 import {
   ResumePageTabsStateContext,
   ResumePageTabsDispatchContext,
