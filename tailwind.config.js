@@ -24,7 +24,8 @@ module.exports = {
       },
       zIndex: {
         'menuButton': 'var(--menu-button-Zindex)',
-        'resumeNavbar': 'var(--resume-navbar-Zindex)'
+        'resumeNavbar': 'var(--resume-navbar-Zindex)',
+        'resumeNavbarBackdrop': 'var(--resume-navbar-backdrop-Zindex)'
       },
       dropShadow: {
         '3xl': '0px 0px 5px rgba(0, 0, 0, 0.63)',

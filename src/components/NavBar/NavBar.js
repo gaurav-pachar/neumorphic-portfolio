@@ -12,7 +12,11 @@ import {
    setActiveTab
  } from "context/resumeSectionStore.js";
  import ClassNames from "Utils/ClassNames";
-export default function NavBar ({page, ...props}){
+export default function NavBar ({
+   page, 
+   resumeBackdropClicked,
+   ...props
+}){
    const DispatchActiveTab = useContext(ResumePageTabsDispatchContext);
    const { activeTab } = React.useContext(ResumePageTabsStateContext);
    switch (page) {
@@ -64,19 +68,25 @@ export default function NavBar ({page, ...props}){
         );
       case 'resumePage':
          return (
+            <>
+            {props.showMenu && <div id="resumeNavbarBackdrop" className="fixed lg:hidden z-resumeNavbarBackdrop top-0 bottom-0 left-0 right-0" onClick={(e) => {
+               console.log("bakdrop cliked");
+               resumeBackdropClicked();
+               }}> 
+               </div>}
             <div className={ClassNames(
                "absolute lg:relative top-0 left-0 bottom-0",
                "flex justify-center items-center",
-               "z-resumeNavbar m-4 w-fit lg:w-1/3 lg:max-w-xs lg:min-w-[300px]",
-               "lg:translate-x-0 transition-all lg:transition-none duration-500 ease-in-out",
+               "m-4 w-fit lg:w-1/3 lg:max-w-xs lg:min-w-[300px]",
+               "lg:translate-x-0 transition-all lg:transition-none duration-500 ease-in-out z-resumeNavbar",
                (props.showMenu ? "translate-x-0" : "-translate-x-[500px]"))}> 
-               
+
                <nav className={ClassNames(
                   "w-full h-auto lg:h-full min-h-fit",
                   "grid grid-cols-[auto_auto] lg:grid-cols-[auto_auto]", 
                   "lg:grid-row-3", 
                   "shadow-shadow-only md:shadow-protruding rounded-[20px]", 
-                  "p-3 z-50 bg-primary")}>
+                  "p-3 bg-primary")}>
                   {/* Inter Page Navigation Links */}
                   <div className={ClassNames(
                      "flex justify-between items-center", 
@@ -105,7 +115,7 @@ export default function NavBar ({page, ...props}){
                   </div>
                   {/* Section Tabs */}
                   <div className={ClassNames(
-                     "grid grid-cols-1 grid-rows-3 gap-2 lg:gap-4",
+                     "grid grid-cols-1 grid-rows-3 gap-4 lg:gap-4",
                      "col-start-1 lg:col-start-1 col-span-2 lg:col-span-2",
                      "row-start-3 row-span-1",
                      "w-full p-2")}>
@@ -126,9 +136,8 @@ export default function NavBar ({page, ...props}){
                         </div>
                   </div>
                </nav>
-               
             </div>
-         
+            </>
          );
       case "contactPage":
          return (

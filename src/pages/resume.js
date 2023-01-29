@@ -44,7 +44,9 @@ export default function Resume (props) {
       </Head>
       <main className={Classes.main}>
         <div className="flex sm:flex-col lg:flex-row box-border sm:p-4 h-full">
-          <NavBar page="resumePage" showMenu={showMenu}/>
+          <NavBar page="resumePage" resumeBackdropClicked={() =>
+            setshowMenu(!showMenu)
+          } showMenu={showMenu}/>
           <div className="overflow-scroll">{Sections(activeTab)}</div>
           
         </div>
