@@ -1,11 +1,10 @@
 import React, { useContext } from "react";
-import { FaHome, FaFileAlt } from "react-icons/fa";
+import { FaHome } from "react-icons/fa";
 import { IoDocumentText, IoMail } from "react-icons/io5";
 import Classes from "./navbar.module.css";
 import Button from "elements/Button";
-import MyGif from "../../../public/AREmoji_20221029_123415_9044 (1).gif";
 import DP from "../../../public/20221115_212121(0).jpg"
-import PictureFrame from 'components/pictureFram/pictureFrame';
+import PictureFrame from 'components/pictureFrame/PictureFrame';
 import {
    ResumePageTabsStateContext,
    ResumePageTabsDispatchContext,

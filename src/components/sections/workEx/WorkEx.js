@@ -1,5 +1,4 @@
 import React from "react";
-import Classes from "./workex.module.css";
 import ExperienceData from "Assets/ExperienceData";
 export default function WorkEx ({props}) {
     const { WorkEx, OpenSource } = ExperienceData

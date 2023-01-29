@@ -1,10 +1,7 @@
 import React from "react";
-import SvgComponents from 'elements/SVG/SvgElements';
-import SkillFrame from "components/skillFrame";
-import SvgElements from "elements/SVG/SvgElements";
-import Classes from "./skills.module.css"
-import SkillCard from "components/skillCar/SkillCard";
+import SkillCard from "components/skillCard/SkillCard";
 import SkillData from "Assets/SkillData";
+
 export default function SkillsSection (props) {
     const { Languages, FrameworksAndLibraries, DevOps, OtherTools} = SkillData
     console.log(Languages);

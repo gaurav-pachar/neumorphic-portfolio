@@ -1,7 +1,5 @@
 import React from "react";
-import Classes from "./pictureFrame.module.css";
 import ClassNames from "Utils/ClassNames";
-import { shape } from "prop-types";
 import Image from "next/image";
 export default function PictureFrame({shape, ...props}) {
    return (

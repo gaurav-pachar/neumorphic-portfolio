@@ -1,0 +1,49 @@
+.NavBar {
+    width: 100%;
+}
+.desktopMenu {
+    display: none;
+    padding: 0.5rem;
+}
+
+@media (min-width: 640px) {
+    
+}
+@media (min-width: 768px) {
+   .NavBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: auto;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+   .desktopMenu {
+    width: 24rem;
+    border-radius: 9999px;
+    padding-left: 20px; 
+    padding-right: 20px;
+    box-shadow: var(--protruding-effect);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.5s;
+   }
+   .desktopMenu:hover{
+    box-shadow: var(--shadow-only);
+   }
+}
+
+@media (min-width: 1024px) {
+    
+}
+
+
+  
+  
+  

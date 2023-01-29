@@ -1,5 +1,4 @@
 import React from "react";
-import Classes from "./skillcard.module.css";
 import SvgElements from "elements/SVG/SvgElements";
 import ClassNames from "Utils/ClassNames";
 export default function SkillCard ({...props}) {
@@ -7,8 +6,8 @@ export default function SkillCard ({...props}) {
     const {icon, details, name, score} = props; 
     const array = [1,2,3,4,5,6,7,8,9,10]
     return (
-        <div className={Classes.skillCard}>
-          <div className={Classes.contentWrapper}>
+        <div className="w-fit">
+          <div className="flex w-fit rounded-lg m-3 p-3 shadow-protruding">
             <div className="flex flex-col justify-center items-center">
               <div id="IconAndDetails" className="flex gap-6">
                 <div id="icon" className="">
