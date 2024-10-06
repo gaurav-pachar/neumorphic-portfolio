@@ -108,9 +108,9 @@ const SkillData = {
         id: "Other Tools",
         list: [
             {
-                name: "Bot Framework",
+                name: "Kameleeon",
                 details: "",
-                icon: "botframework",
+                icon: "kameleoon",
                 score: 0
             },
             {

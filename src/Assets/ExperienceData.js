@@ -3,6 +3,17 @@ const ExperienceData = {
         Name: "Work Experience",
         list: [
             {
+                organisation: "OptiPhoenix",
+                timePeriod: "Mar 2023 - Present",
+                projectDetails: [
+                    "Successfully delivered multiple A/B tests for major enterprise clients, many of which became part of the site’s base code,contributing to long-term performance improvements.",
+                    "Collaborated closely with CROs to gather requirements, understand their objectives, and translate their ideas into actionable A/B tests and front-end implementations that enhanced user engagement and delivered measurable business results.",
+                    "Automated the test creation and deployment processes by leveraging Kameleoon’s API and transitioning the team to Tampermonkey, reducing manual tasks and accelerating development cycles.",
+                    "Developed sophisticated UI/UX designs using advanced Web APIs like Mutation Observer and complex DOM traversal techniques, enhancing websites with highly customized and optimized front-end experiences.",
+                    "Ensured cross-browser and cross-device compatibility for all A/B tests, maintaining a consistent user experience across various platforms, including mobile and desktop."
+                ]
+            },
+            {
                 organisation: "Blue Compute",
                 timePeriod: "Aug 2021 - Feb 2023",
                 projectDetails: [
@@ -14,17 +25,6 @@ const ExperienceData = {
                     "Developed a GatsbyJS website.",
                     "Build a ChatBot using Bot Framework Composer."
                 ] 
-            },
-            {
-                organisation: "OptiPhoenix",
-                timePeriod: "Mar 2023 - Present",
-                projectDetails: [
-                    "Successfully delivered multiple A/B tests for major enterprise clients, many of which became part of the site’s base code,contributing to long-term performance improvements.",
-                    "Collaborated closely with CROs to gather requirements, understand their objectives, and translate their ideas into actionable A/B tests and front-end implementations that enhanced user engagement and delivered measurable business results.",
-                    "Automated the test creation and deployment processes by leveraging Kameleoon’s API and transitioning the team to Tampermonkey, reducing manual tasks and accelerating development cycles.",
-                    "Developed sophisticated UI/UX designs using advanced Web APIs like Mutation Observer and complex DOM traversal techniques, enhancing websites with highly customized and optimized front-end experiences.",
-                    "Ensured cross-browser and cross-device compatibility for all A/B tests, maintaining a consistent user experience across various platforms, including mobile and desktop."
-                ]
             }
         ]
     },
