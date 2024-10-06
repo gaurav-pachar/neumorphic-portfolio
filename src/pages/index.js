@@ -34,7 +34,7 @@ export default function Home() {
           </div>
           <div id='text' className='text-center'>
             <h3 className='font-bold text-gray-500 tracking-wider mb-4 antialiased'>
-              (JavaScript Developer)
+              (Frontend Engineer)
             </h3>
           </div>
           <div id='text' className='text-center'>
@@ -51,11 +51,14 @@ export default function Home() {
           <NavBar page="homePage"/>
           <div className='w-2/4 p-6'>
             <div className='w-4/5 m-auto'>
-              <h1 className='text-4xl font-bold tracking-wider text-gray-600 antialiased text-start'>JavaScript</h1>
-              <h1 className='text-4xl font-bold tracking-wider text-gray-600 antialiased text-end'>Developer</h1>
+              <h1 className='text-4xl font-bold tracking-wider text-gray-600 antialiased text-start'>Frontend</h1>
+              <h1 className='text-4xl font-bold tracking-wider text-gray-600 antialiased text-end'>Engineer</h1>
             </div>
             <p className='text-lg font-medium tracking-wider antialiased text-gray-500 text-justify'>
-                Software Developer with 1+ years of experience developing scalable web applications incorporating JavaScript libraries and frameworks such as React.js, Next.js, and Vue.js. etc
+                  Software Developer with 3+ years of experience with Javascript development,
+      currently specializing in Vanilla JS for building client-side A/B tests, process
+      automation, and ensuring cross-browser compatibility for enterprise-level clients.
+      Also experienced with React.js and Next.js in previous roles.
             </p>
             <SocailLinksCard/>
           </div>

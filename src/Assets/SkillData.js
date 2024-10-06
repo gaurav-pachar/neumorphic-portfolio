@@ -4,7 +4,7 @@ const SkillData = {
     list: [
         {
             name: "JavaScript",
-            details: "ES6, OOP, Functional Programing, Async, DOM Manipulation, NPM",
+            details: "ES6, OOP, Functional Programing, Async, DOM Manipulation, WEB API",
             icon: "js",
             score: 8
         },
@@ -12,13 +12,13 @@ const SkillData = {
             name: "HTML",
             details: "HTML5, UI & UX Design",
             icon: "html",
-            score: 6
+            score: 8
         },
         {
             name: "CSS",
-            details: "Media queries, Flex-Grid Layout, Pseudo Classes, Pseudo Elements",
+            details: "Media queries, Flex-Grid Layout, Pseudo Classes, Pseudo Elements, SVG",
             icon: "css",
-            score: 7
+            score: 8
         }
     ]
    },

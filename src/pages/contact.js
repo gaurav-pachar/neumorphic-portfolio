@@ -6,6 +6,7 @@ import React from "react";
 import { FaPhoneAlt, FaLinkedin, FaGithub, FaTwitter, FaCircleNotch } from "react-icons/fa";
 import { IoMail, IoSend } from "react-icons/io5";
 import ClassNames from "Utils/ClassNames";
+
 const contactInfo = [
   {
     name: "Phone Number",
@@ -18,6 +19,7 @@ const contactInfo = [
     icon: <IoMail className="h-6 w-6 flex-shrink-0 text-gray-500" aria-hidden="true" />
   }
 ]
+
 const socialLinks = [
   {
     name: "LinkedIn",
@@ -218,3 +220,5 @@ const Button = ({
     </div>
   )
 }
+
+
